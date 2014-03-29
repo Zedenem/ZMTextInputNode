@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>56CB7E8F-4AA4-4EDE-8376-2BDC2DDC1EC9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZMTextInputNodeProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA47A622-6F47-4169-A511-03238114B92B</key>
+		<string>https://github.com/Zedenem/ZMTextInputSprite.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>test_project/ZMTextInputNodeProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA47A622-6F47-4169-A511-03238114B92B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Zedenem/ZMTextInputSprite.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA47A622-6F47-4169-A511-03238114B92B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA47A622-6F47-4169-A511-03238114B92B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZMTextInputNodeProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>

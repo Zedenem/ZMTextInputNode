@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface ZMTextInputSpriteProjectTests : XCTestCase
+@interface ZMTextInputNodeProjectTests : XCTestCase
 
 @end
 
-@implementation ZMTextInputSpriteProjectTests
+@implementation ZMTextInputNodeProjectTests
 
 - (void)setUp
 {

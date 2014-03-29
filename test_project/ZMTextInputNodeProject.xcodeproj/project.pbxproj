@@ -11,18 +11,18 @@
 		F22EDB8218E6BF19005C5F9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB8118E6BF19005C5F9A /* CoreGraphics.framework */; };
 		F22EDB8418E6BF19005C5F9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB8318E6BF19005C5F9A /* UIKit.framework */; };
 		F22EDB8618E6BF19005C5F9A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB8518E6BF19005C5F9A /* SpriteKit.framework */; };
-		F22EDB8C18E6BF19005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB8A18E6BF19005C5F9A /* InfoPlist.strings */; };
-		F22EDB8E18E6BF19005C5F9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB8D18E6BF19005C5F9A /* main.m */; };
-		F22EDB9218E6BF19005C5F9A /* ZMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */; };
-		F22EDB9518E6BF19005C5F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB9318E6BF19005C5F9A /* Main.storyboard */; };
-		F22EDB9B18E6BF19005C5F9A /* ZMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */; };
-		F22EDB9E18E6BF19005C5F9A /* ZMMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */; };
-		F22EDBA218E6BF19005C5F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBA118E6BF19005C5F9A /* Images.xcassets */; };
 		F22EDBA918E6BF19005C5F9A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDBA818E6BF19005C5F9A /* XCTest.framework */; };
 		F22EDBAA18E6BF19005C5F9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB7F18E6BF19005C5F9A /* Foundation.framework */; };
 		F22EDBAB18E6BF19005C5F9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB8318E6BF19005C5F9A /* UIKit.framework */; };
-		F22EDBB318E6BF19005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBB118E6BF19005C5F9A /* InfoPlist.strings */; };
-		F22EDBB518E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBB418E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.m */; };
+		F22EDBD018E6C29B005C5F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBC218E6C29B005C5F9A /* Main.storyboard */; };
+		F22EDBD118E6C29B005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBC418E6C29B005C5F9A /* InfoPlist.strings */; };
+		F22EDBD218E6C29B005C5F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBC618E6C29B005C5F9A /* Images.xcassets */; };
+		F22EDBD318E6C29B005C5F9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBC718E6C29B005C5F9A /* main.m */; };
+		F22EDBD418E6C29B005C5F9A /* ZMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBC918E6C29B005C5F9A /* ZMAppDelegate.m */; };
+		F22EDBD518E6C29B005C5F9A /* ZMMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBCB18E6C29B005C5F9A /* ZMMyScene.m */; };
+		F22EDBD718E6C29B005C5F9A /* ZMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBCF18E6C29B005C5F9A /* ZMViewController.m */; };
+		F22EDBE018E6C2C7005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBDC18E6C2C7005C5F9A /* InfoPlist.strings */; };
+		F22EDBE218E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +36,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F22EDB7C18E6BF19005C5F9A /* ZMTextInputSpriteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMTextInputSpriteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22EDB7C18E6BF19005C5F9A /* ZMTextInputNodeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMTextInputNodeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22EDB7F18E6BF19005C5F9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F22EDB8118E6BF19005C5F9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F22EDB8318E6BF19005C5F9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F22EDB8518E6BF19005C5F9A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		F22EDB8918E6BF19005C5F9A /* ZMTextInputSpriteProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZMTextInputSpriteProject-Info.plist"; sourceTree = "<group>"; };
-		F22EDB8B18E6BF19005C5F9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F22EDB8D18E6BF19005C5F9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F22EDB8F18E6BF19005C5F9A /* ZMTextInputSpriteProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZMTextInputSpriteProject-Prefix.pch"; sourceTree = "<group>"; };
-		F22EDB9018E6BF19005C5F9A /* ZMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAppDelegate.h; sourceTree = "<group>"; };
-		F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAppDelegate.m; sourceTree = "<group>"; };
-		F22EDB9418E6BF19005C5F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F22EDB9918E6BF19005C5F9A /* ZMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMViewController.h; sourceTree = "<group>"; };
-		F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMViewController.m; sourceTree = "<group>"; };
-		F22EDB9C18E6BF19005C5F9A /* ZMMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMyScene.h; sourceTree = "<group>"; };
-		F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMyScene.m; sourceTree = "<group>"; };
-		F22EDBA118E6BF19005C5F9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F22EDBA718E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMTextInputSpriteProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22EDBA718E6BF19005C5F9A /* ZMTextInputNodeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMTextInputNodeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22EDBA818E6BF19005C5F9A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F22EDBB018E6BF19005C5F9A /* ZMTextInputSpriteProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZMTextInputSpriteProjectTests-Info.plist"; sourceTree = "<group>"; };
-		F22EDBB218E6BF19005C5F9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F22EDBB418E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTextInputSpriteProjectTests.m; sourceTree = "<group>"; };
+		F22EDBC318E6C29B005C5F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22EDBC518E6C29B005C5F9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F22EDBC618E6C29B005C5F9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F22EDBC718E6C29B005C5F9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22EDBC818E6C29B005C5F9A /* ZMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMAppDelegate.h; sourceTree = "<group>"; };
+		F22EDBC918E6C29B005C5F9A /* ZMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMAppDelegate.m; sourceTree = "<group>"; };
+		F22EDBCA18E6C29B005C5F9A /* ZMMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMyScene.h; sourceTree = "<group>"; };
+		F22EDBCB18E6C29B005C5F9A /* ZMMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMyScene.m; sourceTree = "<group>"; };
+		F22EDBCC18E6C29B005C5F9A /* ZMTextInputNodeProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZMTextInputNodeProject-Info.plist"; sourceTree = "<group>"; };
+		F22EDBCD18E6C29B005C5F9A /* ZMTextInputNodeProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZMTextInputNodeProject-Prefix.pch"; sourceTree = "<group>"; };
+		F22EDBCE18E6C29B005C5F9A /* ZMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMViewController.h; sourceTree = "<group>"; };
+		F22EDBCF18E6C29B005C5F9A /* ZMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMViewController.m; sourceTree = "<group>"; };
+		F22EDBDD18E6C2C7005C5F9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F22EDBDE18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZMTextInputNodeProjectTests-Info.plist"; sourceTree = "<group>"; };
+		F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMTextInputNodeProjectTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +88,9 @@
 		F22EDB7318E6BF19005C5F9A = {
 			isa = PBXGroup;
 			children = (
-				F22EDBBF18E6C03E005C5F9A /* ZMTextInputSprite */,
-				F22EDB8718E6BF19005C5F9A /* ZMTextInputSpriteProject */,
-				F22EDBAE18E6BF19005C5F9A /* ZMTextInputSpriteProjectTests */,
+				F22EDBC018E6C20E005C5F9A /* ZMTextInputNode */,
+				F22EDBC118E6C29B005C5F9A /* ZMTextInputNodeProject */,
+				F22EDBDB18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests */,
 				F22EDB7E18E6BF19005C5F9A /* Frameworks */,
 				F22EDB7D18E6BF19005C5F9A /* Products */,
 			);
@@ -99,8 +99,8 @@
 		F22EDB7D18E6BF19005C5F9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F22EDB7C18E6BF19005C5F9A /* ZMTextInputSpriteProject.app */,
-				F22EDBA718E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.xctest */,
+				F22EDB7C18E6BF19005C5F9A /* ZMTextInputNodeProject.app */,
+				F22EDBA718E6BF19005C5F9A /* ZMTextInputNodeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,65 +117,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F22EDB8718E6BF19005C5F9A /* ZMTextInputSpriteProject */ = {
+		F22EDBC018E6C20E005C5F9A /* ZMTextInputNode */ = {
 			isa = PBXGroup;
 			children = (
-				F22EDB9018E6BF19005C5F9A /* ZMAppDelegate.h */,
-				F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */,
-				F22EDB9318E6BF19005C5F9A /* Main.storyboard */,
-				F22EDB9918E6BF19005C5F9A /* ZMViewController.h */,
-				F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */,
-				F22EDB9C18E6BF19005C5F9A /* ZMMyScene.h */,
-				F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */,
-				F22EDBA118E6BF19005C5F9A /* Images.xcassets */,
-				F22EDB8818E6BF19005C5F9A /* Supporting Files */,
 			);
-			path = ZMTextInputSpriteProject;
+			name = ZMTextInputNode;
+			path = ../ZMTextInputNode;
 			sourceTree = "<group>";
 		};
-		F22EDB8818E6BF19005C5F9A /* Supporting Files */ = {
+		F22EDBC118E6C29B005C5F9A /* ZMTextInputNodeProject */ = {
 			isa = PBXGroup;
 			children = (
-				F22EDB8918E6BF19005C5F9A /* ZMTextInputSpriteProject-Info.plist */,
-				F22EDB8A18E6BF19005C5F9A /* InfoPlist.strings */,
-				F22EDB8D18E6BF19005C5F9A /* main.m */,
-				F22EDB8F18E6BF19005C5F9A /* ZMTextInputSpriteProject-Prefix.pch */,
+				F22EDBC218E6C29B005C5F9A /* Main.storyboard */,
+				F22EDBC818E6C29B005C5F9A /* ZMAppDelegate.h */,
+				F22EDBC918E6C29B005C5F9A /* ZMAppDelegate.m */,
+				F22EDBCA18E6C29B005C5F9A /* ZMMyScene.h */,
+				F22EDBCB18E6C29B005C5F9A /* ZMMyScene.m */,
+				F22EDBCE18E6C29B005C5F9A /* ZMViewController.h */,
+				F22EDBCF18E6C29B005C5F9A /* ZMViewController.m */,
+				F22EDBDA18E6C2AA005C5F9A /* Resources */,
+				F22EDBD818E6C2A0005C5F9A /* Supporting Files */,
+			);
+			path = ZMTextInputNodeProject;
+			sourceTree = "<group>";
+		};
+		F22EDBD818E6C2A0005C5F9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22EDBC418E6C29B005C5F9A /* InfoPlist.strings */,
+				F22EDBC718E6C29B005C5F9A /* main.m */,
+				F22EDBCC18E6C29B005C5F9A /* ZMTextInputNodeProject-Info.plist */,
+				F22EDBCD18E6C29B005C5F9A /* ZMTextInputNodeProject-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F22EDBAE18E6BF19005C5F9A /* ZMTextInputSpriteProjectTests */ = {
+		F22EDBDA18E6C2AA005C5F9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F22EDBB418E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.m */,
-				F22EDBAF18E6BF19005C5F9A /* Supporting Files */,
+				F22EDBC618E6C29B005C5F9A /* Images.xcassets */,
 			);
-			path = ZMTextInputSpriteProjectTests;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		F22EDBAF18E6BF19005C5F9A /* Supporting Files */ = {
+		F22EDBDB18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				F22EDBB018E6BF19005C5F9A /* ZMTextInputSpriteProjectTests-Info.plist */,
-				F22EDBB118E6BF19005C5F9A /* InfoPlist.strings */,
+				F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */,
+				F22EDBE318E6C308005C5F9A /* Supporting Files */,
+			);
+			path = ZMTextInputNodeProjectTests;
+			sourceTree = "<group>";
+		};
+		F22EDBE318E6C308005C5F9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22EDBDC18E6C2C7005C5F9A /* InfoPlist.strings */,
+				F22EDBDE18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests-Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F22EDBBF18E6C03E005C5F9A /* ZMTextInputSprite */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ZMTextInputSprite;
-			path = ../ZMTextInputSprite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F22EDB7B18E6BF19005C5F9A /* ZMTextInputSpriteProject */ = {
+		F22EDB7B18E6BF19005C5F9A /* ZMTextInputNodeProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F22EDBB818E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputSpriteProject" */;
+			buildConfigurationList = F22EDBB818E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputNodeProject" */;
 			buildPhases = (
 				F22EDB7818E6BF19005C5F9A /* Sources */,
 				F22EDB7918E6BF19005C5F9A /* Frameworks */,
@@ -185,14 +193,14 @@
 			);
 			dependencies = (
 			);
-			name = ZMTextInputSpriteProject;
+			name = ZMTextInputNodeProject;
 			productName = ZMTextInputSpriteProject;
-			productReference = F22EDB7C18E6BF19005C5F9A /* ZMTextInputSpriteProject.app */;
+			productReference = F22EDB7C18E6BF19005C5F9A /* ZMTextInputNodeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F22EDBA618E6BF19005C5F9A /* ZMTextInputSpriteProjectTests */ = {
+		F22EDBA618E6BF19005C5F9A /* ZMTextInputNodeProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F22EDBBB18E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputSpriteProjectTests" */;
+			buildConfigurationList = F22EDBBB18E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputNodeProjectTests" */;
 			buildPhases = (
 				F22EDBA318E6BF19005C5F9A /* Sources */,
 				F22EDBA418E6BF19005C5F9A /* Frameworks */,
@@ -203,9 +211,9 @@
 			dependencies = (
 				F22EDBAD18E6BF19005C5F9A /* PBXTargetDependency */,
 			);
-			name = ZMTextInputSpriteProjectTests;
+			name = ZMTextInputNodeProjectTests;
 			productName = ZMTextInputSpriteProjectTests;
-			productReference = F22EDBA718E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.xctest */;
+			productReference = F22EDBA718E6BF19005C5F9A /* ZMTextInputNodeProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F22EDB7718E6BF19005C5F9A /* Build configuration list for PBXProject "ZMTextInputSpriteProject" */;
+			buildConfigurationList = F22EDB7718E6BF19005C5F9A /* Build configuration list for PBXProject "ZMTextInputNodeProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F22EDB7B18E6BF19005C5F9A /* ZMTextInputSpriteProject */,
-				F22EDBA618E6BF19005C5F9A /* ZMTextInputSpriteProjectTests */,
+				F22EDB7B18E6BF19005C5F9A /* ZMTextInputNodeProject */,
+				F22EDBA618E6BF19005C5F9A /* ZMTextInputNodeProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22EDBA218E6BF19005C5F9A /* Images.xcassets in Resources */,
-				F22EDB9518E6BF19005C5F9A /* Main.storyboard in Resources */,
-				F22EDB8C18E6BF19005C5F9A /* InfoPlist.strings in Resources */,
+				F22EDBD218E6C29B005C5F9A /* Images.xcassets in Resources */,
+				F22EDBD018E6C29B005C5F9A /* Main.storyboard in Resources */,
+				F22EDBD118E6C29B005C5F9A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22EDBB318E6BF19005C5F9A /* InfoPlist.strings in Resources */,
+				F22EDBE018E6C2C7005C5F9A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22EDB8E18E6BF19005C5F9A /* main.m in Sources */,
-				F22EDB9E18E6BF19005C5F9A /* ZMMyScene.m in Sources */,
-				F22EDB9218E6BF19005C5F9A /* ZMAppDelegate.m in Sources */,
-				F22EDB9B18E6BF19005C5F9A /* ZMViewController.m in Sources */,
+				F22EDBD318E6C29B005C5F9A /* main.m in Sources */,
+				F22EDBD518E6C29B005C5F9A /* ZMMyScene.m in Sources */,
+				F22EDBD418E6C29B005C5F9A /* ZMAppDelegate.m in Sources */,
+				F22EDBD718E6C29B005C5F9A /* ZMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22EDBB518E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.m in Sources */,
+				F22EDBE218E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,32 +299,32 @@
 /* Begin PBXTargetDependency section */
 		F22EDBAD18E6BF19005C5F9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F22EDB7B18E6BF19005C5F9A /* ZMTextInputSpriteProject */;
+			target = F22EDB7B18E6BF19005C5F9A /* ZMTextInputNodeProject */;
 			targetProxy = F22EDBAC18E6BF19005C5F9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F22EDB8A18E6BF19005C5F9A /* InfoPlist.strings */ = {
+		F22EDBC218E6C29B005C5F9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F22EDB8B18E6BF19005C5F9A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F22EDB9318E6BF19005C5F9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F22EDB9418E6BF19005C5F9A /* Base */,
+				F22EDBC318E6C29B005C5F9A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F22EDBB118E6BF19005C5F9A /* InfoPlist.strings */ = {
+		F22EDBC418E6C29B005C5F9A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F22EDBB218E6BF19005C5F9A /* en */,
+				F22EDBC518E6C29B005C5F9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F22EDBDC18E6C2C7005C5F9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22EDBDD18E6C2C7005C5F9A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -403,9 +411,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
-				INFOPLIST_FILE = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ZMTextInputNodeProject/ZMTextInputNodeProject-Prefix.pch";
+				INFOPLIST_FILE = "ZMTextInputNodeProject/ZMTextInputNodeProject-Info.plist";
+				PRODUCT_NAME = ZMTextInputNodeProject;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,9 +426,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
-				INFOPLIST_FILE = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ZMTextInputNodeProject/ZMTextInputNodeProject-Prefix.pch";
+				INFOPLIST_FILE = "ZMTextInputNodeProject/ZMTextInputNodeProject-Info.plist";
+				PRODUCT_NAME = ZMTextInputNodeProject;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,20 +437,20 @@
 		F22EDBBC18E6BF19005C5F9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMTextInputSpriteProject.app/ZMTextInputSpriteProject";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMTextInputNodeProject.app/ZMTextInputNodeProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "ZMTextInputNodeProject/ZMTextInputNodeProject-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ZMTextInputSpriteProjectTests/ZMTextInputSpriteProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ZMTextInputNodeProjectTests/ZMTextInputNodeProjectTests-Info.plist";
+				PRODUCT_NAME = ZMTextInputNodeProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -451,16 +459,16 @@
 		F22EDBBD18E6BF19005C5F9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMTextInputSpriteProject.app/ZMTextInputSpriteProject";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMTextInputNodeProject.app/ZMTextInputNodeProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
-				INFOPLIST_FILE = "ZMTextInputSpriteProjectTests/ZMTextInputSpriteProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ZMTextInputNodeProject/ZMTextInputNodeProject-Prefix.pch";
+				INFOPLIST_FILE = "ZMTextInputNodeProjectTests/ZMTextInputNodeProjectTests-Info.plist";
+				PRODUCT_NAME = ZMTextInputNodeProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -469,7 +477,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F22EDB7718E6BF19005C5F9A /* Build configuration list for PBXProject "ZMTextInputSpriteProject" */ = {
+		F22EDB7718E6BF19005C5F9A /* Build configuration list for PBXProject "ZMTextInputNodeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F22EDBB618E6BF19005C5F9A /* Debug */,
@@ -478,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F22EDBB818E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputSpriteProject" */ = {
+		F22EDBB818E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputNodeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F22EDBB918E6BF19005C5F9A /* Debug */,
@@ -487,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F22EDBBB18E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputSpriteProjectTests" */ = {
+		F22EDBBB18E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputNodeProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F22EDBBC18E6BF19005C5F9A /* Debug */,
