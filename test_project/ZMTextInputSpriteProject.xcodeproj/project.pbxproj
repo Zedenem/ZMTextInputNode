@@ -14,11 +14,9 @@
 		F22EDB8C18E6BF19005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB8A18E6BF19005C5F9A /* InfoPlist.strings */; };
 		F22EDB8E18E6BF19005C5F9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB8D18E6BF19005C5F9A /* main.m */; };
 		F22EDB9218E6BF19005C5F9A /* ZMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */; };
-		F22EDB9518E6BF19005C5F9A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB9318E6BF19005C5F9A /* Main_iPhone.storyboard */; };
-		F22EDB9818E6BF19005C5F9A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB9618E6BF19005C5F9A /* Main_iPad.storyboard */; };
+		F22EDB9518E6BF19005C5F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB9318E6BF19005C5F9A /* Main.storyboard */; };
 		F22EDB9B18E6BF19005C5F9A /* ZMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */; };
 		F22EDB9E18E6BF19005C5F9A /* ZMMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */; };
-		F22EDBA018E6BF19005C5F9A /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = F22EDB9F18E6BF19005C5F9A /* Spaceship.png */; };
 		F22EDBA218E6BF19005C5F9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBA118E6BF19005C5F9A /* Images.xcassets */; };
 		F22EDBA918E6BF19005C5F9A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDBA818E6BF19005C5F9A /* XCTest.framework */; };
 		F22EDBAA18E6BF19005C5F9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22EDB7F18E6BF19005C5F9A /* Foundation.framework */; };
@@ -49,13 +47,11 @@
 		F22EDB8F18E6BF19005C5F9A /* ZMTextInputSpriteProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZMTextInputSpriteProject-Prefix.pch"; sourceTree = "<group>"; };
 		F22EDB9018E6BF19005C5F9A /* ZMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAppDelegate.h; sourceTree = "<group>"; };
 		F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAppDelegate.m; sourceTree = "<group>"; };
-		F22EDB9418E6BF19005C5F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F22EDB9718E6BF19005C5F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F22EDB9418E6BF19005C5F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F22EDB9918E6BF19005C5F9A /* ZMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMViewController.h; sourceTree = "<group>"; };
 		F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMViewController.m; sourceTree = "<group>"; };
 		F22EDB9C18E6BF19005C5F9A /* ZMMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMyScene.h; sourceTree = "<group>"; };
 		F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMyScene.m; sourceTree = "<group>"; };
-		F22EDB9F18E6BF19005C5F9A /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		F22EDBA118E6BF19005C5F9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F22EDBA718E6BF19005C5F9A /* ZMTextInputSpriteProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMTextInputSpriteProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22EDBA818E6BF19005C5F9A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -92,6 +88,7 @@
 		F22EDB7318E6BF19005C5F9A = {
 			isa = PBXGroup;
 			children = (
+				F22EDBBF18E6C03E005C5F9A /* ZMTextInputSprite */,
 				F22EDB8718E6BF19005C5F9A /* ZMTextInputSpriteProject */,
 				F22EDBAE18E6BF19005C5F9A /* ZMTextInputSpriteProjectTests */,
 				F22EDB7E18E6BF19005C5F9A /* Frameworks */,
@@ -125,13 +122,11 @@
 			children = (
 				F22EDB9018E6BF19005C5F9A /* ZMAppDelegate.h */,
 				F22EDB9118E6BF19005C5F9A /* ZMAppDelegate.m */,
-				F22EDB9318E6BF19005C5F9A /* Main_iPhone.storyboard */,
-				F22EDB9618E6BF19005C5F9A /* Main_iPad.storyboard */,
+				F22EDB9318E6BF19005C5F9A /* Main.storyboard */,
 				F22EDB9918E6BF19005C5F9A /* ZMViewController.h */,
 				F22EDB9A18E6BF19005C5F9A /* ZMViewController.m */,
 				F22EDB9C18E6BF19005C5F9A /* ZMMyScene.h */,
 				F22EDB9D18E6BF19005C5F9A /* ZMMyScene.m */,
-				F22EDB9F18E6BF19005C5F9A /* Spaceship.png */,
 				F22EDBA118E6BF19005C5F9A /* Images.xcassets */,
 				F22EDB8818E6BF19005C5F9A /* Supporting Files */,
 			);
@@ -165,6 +160,14 @@
 				F22EDBB118E6BF19005C5F9A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F22EDBBF18E6C03E005C5F9A /* ZMTextInputSprite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ZMTextInputSprite;
+			path = ../ZMTextInputSprite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +218,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Zedenem;
 				TargetAttributes = {
+					F22EDB7B18E6BF19005C5F9A = {
+						DevelopmentTeam = 7M64MPPM2T;
+					};
 					F22EDBA618E6BF19005C5F9A = {
 						TestTargetID = F22EDB7B18E6BF19005C5F9A;
 					};
@@ -244,10 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22EDBA018E6BF19005C5F9A /* Spaceship.png in Resources */,
 				F22EDBA218E6BF19005C5F9A /* Images.xcassets in Resources */,
-				F22EDB9818E6BF19005C5F9A /* Main_iPad.storyboard in Resources */,
-				F22EDB9518E6BF19005C5F9A /* Main_iPhone.storyboard in Resources */,
+				F22EDB9518E6BF19005C5F9A /* Main.storyboard in Resources */,
 				F22EDB8C18E6BF19005C5F9A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,20 +305,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F22EDB9318E6BF19005C5F9A /* Main_iPhone.storyboard */ = {
+		F22EDB9318E6BF19005C5F9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F22EDB9418E6BF19005C5F9A /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F22EDB9618E6BF19005C5F9A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F22EDB9718E6BF19005C5F9A /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F22EDBB118E6BF19005C5F9A /* InfoPlist.strings */ = {
@@ -405,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
 				INFOPLIST_FILE = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Info.plist";
@@ -419,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Prefix.pch";
 				INFOPLIST_FILE = "ZMTextInputSpriteProject/ZMTextInputSpriteProject-Info.plist";
@@ -487,6 +485,7 @@
 				F22EDBBA18E6BF19005C5F9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22EDBBB18E6BF19005C5F9A /* Build configuration list for PBXNativeTarget "ZMTextInputSpriteProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +494,7 @@
 				F22EDBBD18E6BF19005C5F9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
