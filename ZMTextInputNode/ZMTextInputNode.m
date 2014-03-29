@@ -10,10 +10,8 @@
 
 @interface ZMTextInputNode ()
 
-@property(readwrite, retain) UIView *inputView;
-
 #pragma mark Custom Keyboard
-@property(strong, nonatomic) UIView *keyboard;
+@property(strong, nonatomic) ZMKeyboardNode *keyboard;
 
 @end
 
@@ -24,21 +22,24 @@
     self = [super initWithFontNamed:fontName];
     if (self) {
         self.userInteractionEnabled = YES;
-        
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1024, 384)];
-        view.backgroundColor = [UIColor redColor];
-        self.inputView = view;
     }
     return self;
 }
+- (instancetype)initWithKeyboard:(ZMKeyboardNode *)keyboard {
+    self = [self initWithFontNamed:@"Helvetica"];
+    if (self) {
+        self.keyboard = keyboard;
+    }
+    return self;
+}
++ (instancetype)textInputNodeWithKeyboard:(ZMKeyboardNode *)keyboard {
+    return [[self alloc] initWithKeyboard:keyboard];
+}
 
 #pragma mark Touches
-- (BOOL)canBecomeFirstResponder {
-    return YES;
-}
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-    [self becomeFirstResponder];
+    !self.keyboard.isPresented ? [self.keyboard present] : [self.keyboard dismiss];;
 }
 
 @end

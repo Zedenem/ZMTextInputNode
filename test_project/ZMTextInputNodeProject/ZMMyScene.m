@@ -10,14 +10,22 @@
 
 #import "ZMTextInputNode.h"
 
+@interface ZMMyScene ()
+
+#pragma mark Custom Keyboard
+@property(strong, nonatomic) ZMKeyboardNode *keyboard;
+
+@end
+
 @implementation ZMMyScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         
         self.anchorPoint = CGPointMake(0.5, 0.5);
+        self.keyboard = [ZMKeyboardNode keyboardNodeWithScene:self];
         
-        ZMTextInputNode *textInputNode = [[ZMTextInputNode alloc] initWithFontNamed:@"Helvetice-Neue"];
+        ZMTextInputNode *textInputNode = [ZMTextInputNode textInputNodeWithKeyboard:self.keyboard];
         textInputNode.text = @"Youhou";
         [self addChild:textInputNode];
         

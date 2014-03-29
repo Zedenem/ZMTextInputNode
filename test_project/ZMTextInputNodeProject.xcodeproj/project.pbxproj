@@ -24,6 +24,7 @@
 		F22EDBE018E6C2C7005C5F9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22EDBDC18E6C2C7005C5F9A /* InfoPlist.strings */; };
 		F22EDBE218E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */; };
 		F22EDBE618E6C408005C5F9A /* ZMTextInputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */; };
+		F22EDBE918E6C926005C5F9A /* ZMKeyboardNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMTextInputNodeProjectTests.m; sourceTree = "<group>"; };
 		F22EDBE418E6C408005C5F9A /* ZMTextInputNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMTextInputNode.h; sourceTree = "<group>"; };
 		F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMTextInputNode.m; sourceTree = "<group>"; };
+		F22EDBE718E6C926005C5F9A /* ZMKeyboardNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMKeyboardNode.h; sourceTree = "<group>"; };
+		F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMKeyboardNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				F22EDBE418E6C408005C5F9A /* ZMTextInputNode.h */,
 				F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */,
+				F22EDBE718E6C926005C5F9A /* ZMKeyboardNode.h */,
+				F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */,
 			);
 			name = ZMTextInputNode;
 			path = ../ZMTextInputNode;
@@ -285,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22EDBD318E6C29B005C5F9A /* main.m in Sources */,
+				F22EDBE918E6C926005C5F9A /* ZMKeyboardNode.m in Sources */,
 				F22EDBE618E6C408005C5F9A /* ZMTextInputNode.m in Sources */,
 				F22EDBD518E6C29B005C5F9A /* ZMMyScene.m in Sources */,
 				F22EDBD418E6C29B005C5F9A /* ZMAppDelegate.m in Sources */,
