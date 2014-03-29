@@ -8,10 +8,19 @@
 
 #import "ZMMyScene.h"
 
+#import "ZMTextInputNode.h"
+
 @implementation ZMMyScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
+        
+        self.anchorPoint = CGPointMake(0.5, 0.5);
+        
+        ZMTextInputNode *textInputNode = [[ZMTextInputNode alloc] initWithFontNamed:@"Helvetice-Neue"];
+        textInputNode.text = @"Youhou";
+        [self addChild:textInputNode];
+        
     }
     return self;
 }
