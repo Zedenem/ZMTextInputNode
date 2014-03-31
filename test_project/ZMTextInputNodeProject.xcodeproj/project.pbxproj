@@ -25,6 +25,7 @@
 		F22EDBE218E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBDF18E6C2C7005C5F9A /* ZMTextInputNodeProjectTests.m */; };
 		F22EDBE618E6C408005C5F9A /* ZMTextInputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */; };
 		F22EDBE918E6C926005C5F9A /* ZMKeyboardNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */; };
+		F2BA9FC518E816DD00825B78 /* ZMKeyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BA9FC418E816DD00825B78 /* ZMKeyNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMTextInputNode.m; sourceTree = "<group>"; };
 		F22EDBE718E6C926005C5F9A /* ZMKeyboardNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMKeyboardNode.h; sourceTree = "<group>"; };
 		F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMKeyboardNode.m; sourceTree = "<group>"; };
+		F2BA9FC318E816DD00825B78 /* ZMKeyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMKeyNode.h; sourceTree = "<group>"; };
+		F2BA9FC418E816DD00825B78 /* ZMKeyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMKeyNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				F22EDBE518E6C408005C5F9A /* ZMTextInputNode.m */,
 				F22EDBE718E6C926005C5F9A /* ZMKeyboardNode.h */,
 				F22EDBE818E6C926005C5F9A /* ZMKeyboardNode.m */,
+				F2BA9FC318E816DD00825B78 /* ZMKeyNode.h */,
+				F2BA9FC418E816DD00825B78 /* ZMKeyNode.m */,
 			);
 			name = ZMTextInputNode;
 			path = ../ZMTextInputNode;
@@ -293,6 +298,7 @@
 				F22EDBE918E6C926005C5F9A /* ZMKeyboardNode.m in Sources */,
 				F22EDBE618E6C408005C5F9A /* ZMTextInputNode.m in Sources */,
 				F22EDBD518E6C29B005C5F9A /* ZMMyScene.m in Sources */,
+				F2BA9FC518E816DD00825B78 /* ZMKeyNode.m in Sources */,
 				F22EDBD418E6C29B005C5F9A /* ZMAppDelegate.m in Sources */,
 				F22EDBD718E6C29B005C5F9A /* ZMViewController.m in Sources */,
 			);

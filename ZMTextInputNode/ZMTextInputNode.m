@@ -8,7 +8,7 @@
 
 #import "ZMTextInputNode.h"
 
-@interface ZMTextInputNode ()
+@interface ZMTextInputNode () <ZMKeyboardNodeDelegate>
 
 #pragma mark Custom Keyboard
 @property(strong, nonatomic) ZMKeyboardNode *keyboard;
@@ -39,7 +39,18 @@
 #pragma mark Touches
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-    !self.keyboard.isPresented ? [self.keyboard present] : [self.keyboard dismiss];;
+    if (!self.keyboard.isPresented) {
+        [self.keyboard present];
+        self.keyboard.delegate = self;
+    }
+    else {
+        [self.keyboard dismiss];
+    }
+}
+
+#pragma mark ZMKeyboardDelegate
+- (void)keyboardNode:(ZMKeyboardNode *)keyboardNode didSelectCharacter:(NSString *)character {
+    self.text = character;
 }
 
 @end
