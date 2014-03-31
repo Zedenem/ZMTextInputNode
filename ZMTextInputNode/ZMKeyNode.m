@@ -26,7 +26,7 @@ static NSString *const kAnimatedButtonActionKey = @"animatedButtonActionKey";
 #pragma mark Initialization
 
 - (instancetype)initWithCharacter:(NSString *)character target:(id)target action:(SEL)action {
-    self = [self initWithColor:[UIColor darkGrayColor] size:CGSizeMake(88.f, 108.f)];
+    self = [self initWithColor:[UIColor darkGrayColor] size:CGSizeMake(66.f, 88.f)];
     if (self) {
         self.userInteractionEnabled = YES;
         [self.labelNode setText:character];

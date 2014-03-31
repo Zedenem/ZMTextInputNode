@@ -8,10 +8,27 @@
 
 #import "ZMKeyboardNode.h"
 
+// Constants
+extern NSString *const ZMTextInputNodeEmptyString;
+
+@class ZMTextInputNode;
+@protocol ZMTextInputNodeDelegate <NSObject>
+
+- (void)textInputNodeDidStartEditing:(ZMTextInputNode *)textInputNode;
+- (void)textInputNodeDidChange:(ZMTextInputNode *)textInputNode;
+- (BOOL)textInputNodeShouldClear:(ZMTextInputNode *)textInputNode;
+
+@end
+
 @interface ZMTextInputNode : SKLabelNode
+
+@property(weak, nonatomic) id<ZMTextInputNodeDelegate> delegate;
 
 #pragma mark Initialization
 - (instancetype)initWithKeyboard:(ZMKeyboardNode *)keyboard;
 + (instancetype)textInputNodeWithKeyboard:(ZMKeyboardNode *)keyboard;
+
+#pragma mark Editing
+@property(assign, nonatomic, getter = isEditing) BOOL editing;
 
 @end

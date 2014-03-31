@@ -8,7 +8,11 @@
 
 #import "ZMKeyboardNode.h"
 
+// Nodes
 #import "ZMKeyNode.h"
+
+// Constants
+NSString *const ZMKeyboardNodeDeleteKey = @"<";
 
 @interface ZMKeyboardNode ()
 
@@ -71,10 +75,10 @@
     return UIEdgeInsetsMake(10.f, 10.f, 10.f, 10.f);
 }
 - (CGSize)keySize {
-    return CGSizeMake(88.f, 108.f);
+    return CGSizeMake(66.f, 88.f);
 }
 - (CGSize)spaceBetweenKeys {
-    return CGSizeMake(10.f, 5.f);
+    return CGSizeMake(20.f, 10.f);
 }
 - (NSUInteger)numberOfSections {
     NSUInteger numberOfSections = 1;
@@ -127,12 +131,17 @@
     }
 }
 - (void)keyStroked:(ZMKeyNode *)keyNode {
-    [self.delegate keyboardNode:self didSelectCharacter:keyNode.name];
+    if ([keyNode.name isEqualToString:ZMKeyboardNodeDeleteKey]) {
+        [self.delegate keyboardNodeDidHitDeleteKey:self];
+    }
+    else {
+        [self.delegate keyboardNode:self didSelectCharacter:keyNode.name];
+    }
 }
 
 #pragma mark Predefined Sets of Keys
 + (NSArray *)azertyAlphabetKeys {
-    return @[@[@"A", @"Z", @"E", @"R", @"T", @"Y", @"U", @"I", @"O", @"P"],
+    return @[@[@"A", @"Z", @"E", @"R", @"T", @"Y", @"U", @"I", @"O", @"P", ZMKeyboardNodeDeleteKey],
              @[@"Q", @"S", @"D", @"F", @"G", @"H", @"J", @"K", @"L", @"M"],
              @[@"W", @"X", @"C", @"V", @"B", @"N"]];
 }

@@ -21,6 +21,7 @@
 
 @optional
 - (void)keyboardNode:(ZMKeyboardNode *)keyboardNode didSelectCharacter:(NSString *)character;
+- (void)keyboardNodeDidHitDeleteKey:(ZMKeyboardNode *)keyboardNode;
 
 @end
 

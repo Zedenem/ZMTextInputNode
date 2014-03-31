@@ -8,6 +8,9 @@
 
 #import "ZMTextInputNode.h"
 
+// Constants
+NSString *const ZMTextInputNodeEmptyString = @"_";
+
 @interface ZMTextInputNode () <ZMKeyboardNodeDelegate>
 
 #pragma mark Custom Keyboard
@@ -29,6 +32,7 @@
     self = [self initWithFontNamed:@"Helvetica"];
     if (self) {
         self.keyboard = keyboard;
+        self.text = ZMTextInputNodeEmptyString;
     }
     return self;
 }
@@ -36,21 +40,44 @@
     return [[self alloc] initWithKeyboard:keyboard];
 }
 
+#pragma mark Editing
+- (void)setEditing:(BOOL)editing {
+    if (_editing != editing) {
+        _editing = editing;
+        if (_editing) {
+            self.fontColor = [UIColor cyanColor];
+            self.fontName = @"Helvetica-Bold";
+            if (!self.keyboard.presented) {
+                [self.keyboard present];
+            }
+            self.keyboard.delegate = self;
+        }
+        else {
+            self.fontColor = [UIColor whiteColor];
+            self.fontName = @"Helvetica";
+            if ([self.keyboard.delegate isEqual:self]) {
+                self.keyboard.delegate = nil;
+            }
+        }
+    }
+}
+
 #pragma mark Touches
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-    if (!self.keyboard.isPresented) {
-        [self.keyboard present];
-        self.keyboard.delegate = self;
-    }
-    else {
-        [self.keyboard dismiss];
-    }
+    [self.delegate textInputNodeDidStartEditing:self];
+    self.editing = YES;
 }
 
 #pragma mark ZMKeyboardDelegate
 - (void)keyboardNode:(ZMKeyboardNode *)keyboardNode didSelectCharacter:(NSString *)character {
     self.text = character;
+    [self.delegate textInputNodeDidChange:self];
+}
+- (void)keyboardNodeDidHitDeleteKey:(ZMKeyboardNode *)keyboardNode {
+    if ([self.delegate textInputNodeShouldClear:self]) {
+        self.text = ZMTextInputNodeEmptyString;
+    }
 }
 
 @end

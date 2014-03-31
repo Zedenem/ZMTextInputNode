@@ -10,7 +10,7 @@
 
 #import "ZMTextInputNode.h"
 
-@interface ZMMyScene () <ZMKeyboardNodeDataSource>
+@interface ZMMyScene () <ZMKeyboardNodeDataSource, ZMTextInputNodeDelegate>
 
 #pragma mark Custom Keyboard
 @property(strong, nonatomic) ZMKeyboardNode *keyboard;
@@ -26,10 +26,15 @@
         self.keyboard = [ZMKeyboardNode keyboardNodeWithScene:self];
         self.keyboard.dataSource = self;
         
-        ZMTextInputNode *textInputNode = [ZMTextInputNode textInputNodeWithKeyboard:self.keyboard];
-        textInputNode.text = @"A";
-        textInputNode.position = CGPointMake(0.f, 100.f);
-        [self addChild:textInputNode];
+        for (int i = 0; i < 10; i++) {
+            ZMTextInputNode *textInputNode = [ZMTextInputNode textInputNodeWithKeyboard:self.keyboard];
+            textInputNode.delegate = self;
+            textInputNode.name = [NSString stringWithFormat:@"%lu", (unsigned long)i];
+            textInputNode.position = CGPointMake(0.f -4*50.f + i*50.f, 100.f);
+            [self addChild:textInputNode];
+        }
+        
+        
         
     }
     return self;
@@ -44,6 +49,32 @@
 }
 - (NSString *)keyboardNode:(ZMKeyboardNode *)keyboardNode characterAtIndexPath:(NSIndexPath *)indexPath {
     return [ZMKeyboardNode azertyAlphabetKeys][indexPath.section][indexPath.row];
+}
+
+#pragma mark ZMTextInputNodeDelegate
+- (void)textInputNodeDidStartEditing:(ZMTextInputNode *)textInputNode {
+    for (SKNode *node in self.children) {
+        if ([node isKindOfClass:[ZMTextInputNode class]]) {
+            ((ZMTextInputNode *)node).editing = NO;
+        }
+    }
+    textInputNode.editing = YES;
+}
+- (void)textInputNodeDidChange:(ZMTextInputNode *)textInputNode {
+    if ([textInputNode.name integerValue] < 10-1) {
+        textInputNode.editing = NO;
+        ZMTextInputNode *nextTextInputNode = (ZMTextInputNode *)[self childNodeWithName:[NSString stringWithFormat:@"%lu", (unsigned long)[textInputNode.name integerValue] + 1]];
+        nextTextInputNode.editing = YES;
+    }
+}
+- (BOOL)textInputNodeShouldClear:(ZMTextInputNode *)textInputNode {
+    if ([textInputNode.text isEqualToString:ZMTextInputNodeEmptyString] && [textInputNode.name integerValue] > 0) {
+        textInputNode.editing = NO;
+        ZMTextInputNode *previousTextInputNode = (ZMTextInputNode *)[self childNodeWithName:[NSString stringWithFormat:@"%lu", (unsigned long)[textInputNode.name integerValue] - 1]];
+        previousTextInputNode.editing = YES;
+        previousTextInputNode.text = ZMTextInputNodeEmptyString;
+    }
+    return YES;
 }
 
 @end
