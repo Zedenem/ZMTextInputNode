@@ -9,7 +9,7 @@
 #import "ZMTextInputNode.h"
 
 // Constants
-NSString *const ZMTextInputNodeEmptyString = @"_";
+NSString *const ZMTextInputNodeEmptyString = @"?";
 
 @interface ZMTextInputNode () <ZMKeyboardNodeDelegate>
 
@@ -33,6 +33,7 @@ NSString *const ZMTextInputNodeEmptyString = @"_";
     if (self) {
         self.keyboard = keyboard;
         self.text = ZMTextInputNodeEmptyString;
+        self.fontColor = [UIColor darkTextColor];
     }
     return self;
 }
@@ -45,7 +46,7 @@ NSString *const ZMTextInputNodeEmptyString = @"_";
     if (_editing != editing) {
         _editing = editing;
         if (_editing) {
-            self.fontColor = [UIColor cyanColor];
+            self.fontColor = [UIColor blueColor];
             self.fontName = @"Helvetica-Bold";
             if (!self.keyboard.presented) {
                 [self.keyboard present];
@@ -53,7 +54,7 @@ NSString *const ZMTextInputNodeEmptyString = @"_";
             self.keyboard.delegate = self;
         }
         else {
-            self.fontColor = [UIColor whiteColor];
+            self.fontColor = [UIColor darkTextColor];
             self.fontName = @"Helvetica";
             if ([self.keyboard.delegate isEqual:self]) {
                 self.keyboard.delegate = nil;

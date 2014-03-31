@@ -21,8 +21,6 @@
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
-        
-        self.anchorPoint = CGPointMake(0.5, 0.5);
         self.keyboard = [ZMKeyboardNode keyboardNodeWithScene:self];
         self.keyboard.dataSource = self;
         
@@ -30,7 +28,7 @@
             ZMTextInputNode *textInputNode = [ZMTextInputNode textInputNodeWithKeyboard:self.keyboard];
             textInputNode.delegate = self;
             textInputNode.name = [NSString stringWithFormat:@"%lu", (unsigned long)i];
-            textInputNode.position = CGPointMake(0.f -4*50.f + i*50.f, 100.f);
+            textInputNode.position = CGPointMake(self.size.width/2 -4*50.f + i*50.f, self.size.height/2 + 100.f);
             [self addChild:textInputNode];
         }
         

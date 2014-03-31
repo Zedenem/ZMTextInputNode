@@ -39,7 +39,7 @@ NSString *const ZMKeyboardNodeDeleteKey = @"<";
     self = [super initWithColor:[UIColor grayColor] size:CGSizeMake(scene.size.width, scene.size.height/2)];
     if (self) {
         self.zPosition = MAXFLOAT;
-        self.position = CGPointMake(0, -scene.size.height);
+        self.position = CGPointMake(scene.size.width/2, -scene.size.height);
         self.presented = NO;
         [scene addChild:self];
     }
@@ -52,7 +52,7 @@ NSString *const ZMKeyboardNodeDeleteKey = @"<";
 #pragma mark Keyboard Presentation
 - (void)present {
     if (!self.presented) {
-        [self runAction:[SKAction moveTo:CGPointMake(self.position.x, -self.size.height/2) duration:0.2f]];
+        [self runAction:[SKAction moveTo:CGPointMake(self.position.x, self.size.height/2) duration:0.2f]];
         self.presented = YES;
         [self reloadData];
     }
